@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="marketing-platform-domain" />
+        <module name="marketing-platform-infrastructure" />
+        <module name="marketing-platform-starter" />
+        <module name="marketing-platform-adapter" />
+        <module name="marketing-platform-constant" />
+        <module name="marketing-platform-application" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

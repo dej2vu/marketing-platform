@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="97ff118a-8ce3-43fa-8082-65877f2f1ab7" name="Changes" comment="feat(init): Project init">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/devops/database/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/devops/database/sql/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-adapter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-application/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-constant/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-constant/src/main/java/io/github/dej2vu/constant/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/award/entity/Award.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/award/mapper/AwardMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/strategy/entity/Strategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/strategy/entity/StrategyAward.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/strategy/entity/StrategyRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/strategy/mapper/StrategyAwardMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/strategy/mapper/StrategyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/strategy/mapper/StrategyRuleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/java/io/github/dej2vu/MarketingPlatformStarter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/award_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/strategy_award_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/strategy_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/strategy_rule_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "dej2vu"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:dej2vu/marketing-platform.git",
+    "accountId": "28f47cc8-b687-43c9-bfb5-06ba8eca4fff"
+  }
+}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2ejQ3YGWztF1asiNbtpgmB50DnG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Test.executor": "Run",
+    "Docker.database.mysql: Compose Deployment.executor": "Run",
+    "Docker.database: Compose Deployment.executor": "Run",
+    "Docker.postgresql: Compose Deployment.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.MarketingPlatformStarter.executor": "Run",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/dej2vu/Documents/Workspace/IntelliJ IDEA/dej2vu.tech/marketing-platform/marketing-platform-starter/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "ssh.settings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/marketing-platform-starter/src/main/resources" />
+      <recent name="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/award" />
+      <recent name="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent" />
+      <recent name="$PROJECT_DIR$/docs/devops/postgresql" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.github.dej2vu.constant.exception" />
+      <recent name="io.github.dej2vu.constant.event" />
+      <recent name="io.github.dej2vu.constant.response" />
+      <recent name="io.github.dej2vu.constant" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.database: Compose Deployment">
+    <configuration name="MarketingPlatformStarter (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="marketing-platform-starter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.dej2vu.MarketingPlatformStarter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MarketingPlatformStarter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="marketing-platform-starter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.dej2vu.marketing.platform.MarketingPlatformStarter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.dej2vu.marketing.platform.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="database: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="docs/devops/database/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="database.mysql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mysql" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docs/devops/database/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.database: Compose Deployment" />
+        <item itemvalue="Docker.database.mysql: Compose Deployment" />
+        <item itemvalue="Spring Boot.MarketingPlatformStarter" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="97ff118a-8ce3-43fa-8082-65877f2f1ab7" name="Changes" comment="" />
+      <created>1712415310572</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712415310572</updated>
+      <workItem from="1712415312118" duration="7135000" />
+      <workItem from="1715929417459" duration="550000" />
+      <workItem from="1715942057797" duration="221000" />
+      <workItem from="1715942353632" duration="260000" />
+      <workItem from="1715942727233" duration="1371000" />
+      <workItem from="1716385547271" duration="19458000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(init): Fix .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(init): Fix .gitignore" />
+  </component>
+</project>
