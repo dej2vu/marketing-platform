@@ -66,9 +66,6 @@
     "Docker.postgresql: Compose Deployment.executor": "Run",
     "JUnit.PrizeMapperTest.executor": "Run",
     "JUnit.PrizeMapperTest.should_return_all_prizes.executor": "Run",
-    "JUnit.RaffleServiceTest.should_success_all_prizes.executor": "Run",
-    "JUnit.RaffleServiceTest.should_success_assemble_strategy.executor": "Debug",
-    "JUnit.RaffleServiceTest.should_success_return_prize_code.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -92,9 +89,6 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="ReactorSettings">
-    <option name="notificationShown" value="true" />
-  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/config" />
@@ -117,7 +111,22 @@
       <recent name="io.github.dej2vu.constant" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RaffleServiceTest.should_success_return_prize_code">
+  <component name="RunManager" selected="JUnit.PrizeMapperTest.should_return_all_prizes">
+    <configuration name="PrizeMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="marketing-platform-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.dej2vu.infrastructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.dej2vu.infrastructure" />
+      <option name="MAIN_CLASS_NAME" value="io.github.dej2vu.infrastructure.PrizeMapperTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PrizeMapperTest.should_return_all_prizes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="marketing-platform-starter" />
       <extension name="coverage">
@@ -129,54 +138,6 @@
       <option name="PACKAGE_NAME" value="io.github.dej2vu.infrastructure" />
       <option name="MAIN_CLASS_NAME" value="io.github.dej2vu.infrastructure.PrizeMapperTest" />
       <option name="METHOD_NAME" value="should_return_all_prizes" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RaffleServiceTest.should_success_all_prizes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="marketing-platform-starter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.dej2vu.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.dej2vu.domain" />
-      <option name="MAIN_CLASS_NAME" value="io.github.dej2vu.domain.RaffleServiceTest" />
-      <option name="METHOD_NAME" value="should_success_all_prizes" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RaffleServiceTest.should_success_assemble_strategy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="marketing-platform-starter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.dej2vu.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.dej2vu.domain" />
-      <option name="MAIN_CLASS_NAME" value="io.github.dej2vu.domain.RaffleServiceTest" />
-      <option name="METHOD_NAME" value="should_success_assemble_strategy" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RaffleServiceTest.should_success_return_prize_code" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="marketing-platform-starter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.dej2vu.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.dej2vu.domain" />
-      <option name="MAIN_CLASS_NAME" value="io.github.dej2vu.domain.RaffleServiceTest" />
-      <option name="METHOD_NAME" value="should_success_return_prize_code" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -208,13 +169,35 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="environment: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="docs/devops/environment/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="environment.mysql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mysql" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docs/devops/environment/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RaffleServiceTest.should_success_return_prize_code" />
-        <item itemvalue="JUnit.RaffleServiceTest.should_success_assemble_strategy" />
-        <item itemvalue="JUnit.RaffleServiceTest.should_success_all_prizes" />
-        <item itemvalue="Spring Boot.MarketingPlatformStarter" />
         <item itemvalue="JUnit.PrizeMapperTest.should_return_all_prizes" />
+        <item itemvalue="Docker.environment: Compose Deployment" />
+        <item itemvalue="JUnit.PrizeMapperTest" />
+        <item itemvalue="Spring Boot.MarketingPlatformStarter" />
+        <item itemvalue="Docker.environment.mysql: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -281,15 +264,7 @@
       <option name="project" value="LOCAL" />
       <updated>1716512929538</updated>
     </task>
-    <task id="LOCAL-00006" summary="feat: Assemble Strategy">
-      <option name="closed" value="true" />
-      <created>1716525778174</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1716525778174</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,8 +286,6 @@
     <MESSAGE value="feat(init): Rename" />
     <MESSAGE value="style: Rename" />
     <MESSAGE value="feat: add RedisService" />
-    <MESSAGE value="fix: Fix mysql driver" />
-    <MESSAGE value="feat: Assemble Strategy" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Assemble Strategy" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add RedisService" />
   </component>
 </project>

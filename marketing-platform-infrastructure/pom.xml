@@ -27,6 +27,10 @@
             <groupId>io.github.dej2vu</groupId>
             <artifactId>marketing-platform-domain</artifactId>
         </dependency>
+        <dependency>
+            <groupId>io.github.dej2vu</groupId>
+            <artifactId>marketing-platform-constant</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.redisson</groupId>
