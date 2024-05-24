@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97ff118a-8ce3-43fa-8082-65877f2f1ab7" name="Changes" comment="feat: add RedisService">
-      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/config/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/src/test/java/io/github/dej2vu/infrastructure/PrizeMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/model/RaffleStrategyPrize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/convertor/RaffleStrategyPrizeConvertor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/src/test/java/io/github/dej2vu/domain/RaffleServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/devops/environment/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/devops/docker-compose-environment.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/devops/environment/mysql/sql/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docs/devops/sql/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/devops/environment/redis/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/devops/redis/redis.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-constant/src/main/java/io/github/dej2vu/constant/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-constant/src/main/java/io/github/dej2vu/constant/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/repository/RaffleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/repository/RaffleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/service/RaffleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/service/RaffleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-starter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/mapper/RaffleStrategyPrizeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/mapper/RaffleStrategyPrizeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/repository/RaffleRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/repository/RaffleRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/raffle_strategy_prize_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/raffle_strategy_prize_mapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +76,9 @@
     "Docker.postgresql: Compose Deployment.executor": "Run",
     "JUnit.PrizeMapperTest.executor": "Run",
     "JUnit.PrizeMapperTest.should_return_all_prizes.executor": "Run",
+    "JUnit.RaffleServiceTest.should_success_all_prizes.executor": "Run",
+    "JUnit.RaffleServiceTest.should_success_assemble_strategy.executor": "Debug",
+    "JUnit.RaffleServiceTest.should_success_return_prize_code.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -100,6 +102,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/config" />
@@ -122,22 +127,7 @@
       <recent name="io.github.dej2vu.constant" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PrizeMapperTest.should_return_all_prizes">
-    <configuration name="PrizeMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="marketing-platform-starter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.dej2vu.infrastructure.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.dej2vu.infrastructure" />
-      <option name="MAIN_CLASS_NAME" value="io.github.dej2vu.infrastructure.PrizeMapperTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.RaffleServiceTest.should_success_return_prize_code">
     <configuration name="PrizeMapperTest.should_return_all_prizes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="marketing-platform-starter" />
       <extension name="coverage">
@@ -149,6 +139,54 @@
       <option name="PACKAGE_NAME" value="io.github.dej2vu.infrastructure" />
       <option name="MAIN_CLASS_NAME" value="io.github.dej2vu.infrastructure.PrizeMapperTest" />
       <option name="METHOD_NAME" value="should_return_all_prizes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RaffleServiceTest.should_success_all_prizes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="marketing-platform-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.dej2vu.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.dej2vu.domain" />
+      <option name="MAIN_CLASS_NAME" value="io.github.dej2vu.domain.RaffleServiceTest" />
+      <option name="METHOD_NAME" value="should_success_all_prizes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RaffleServiceTest.should_success_assemble_strategy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="marketing-platform-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.dej2vu.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.dej2vu.domain" />
+      <option name="MAIN_CLASS_NAME" value="io.github.dej2vu.domain.RaffleServiceTest" />
+      <option name="METHOD_NAME" value="should_success_assemble_strategy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RaffleServiceTest.should_success_return_prize_code" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="marketing-platform-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.dej2vu.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.dej2vu.domain" />
+      <option name="MAIN_CLASS_NAME" value="io.github.dej2vu.domain.RaffleServiceTest" />
+      <option name="METHOD_NAME" value="should_success_return_prize_code" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,35 +218,13 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="environment: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="envFilePath" value="" />
-          <option name="sourceFilePath" value="docs/devops/environment/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="environment.mysql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="mysql" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docs/devops/environment/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PrizeMapperTest.should_return_all_prizes" />
-        <item itemvalue="Docker.environment: Compose Deployment" />
-        <item itemvalue="JUnit.PrizeMapperTest" />
+        <item itemvalue="JUnit.RaffleServiceTest.should_success_return_prize_code" />
+        <item itemvalue="JUnit.RaffleServiceTest.should_success_assemble_strategy" />
+        <item itemvalue="JUnit.RaffleServiceTest.should_success_all_prizes" />
         <item itemvalue="Spring Boot.MarketingPlatformStarter" />
-        <item itemvalue="Docker.environment.mysql: Compose Deployment" />
+        <item itemvalue="JUnit.PrizeMapperTest.should_return_all_prizes" />
       </list>
     </recent_temporary>
   </component>

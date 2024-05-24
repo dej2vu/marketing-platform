@@ -14,6 +14,6 @@ import java.util.List;
 @Mapper
 public interface RaffleStrategyPrizeMapper {
 
-    List<RaffleStrategyPrizePO> findAll();
+    List<RaffleStrategyPrizePO> findByStrategyCode(String strategyCode);
 
 }
