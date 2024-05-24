@@ -19,7 +19,7 @@ public class RaffleStrategyRule {
     private String strategyCode;
     /** 奖品编码 - 内部流转使用【规则类型为策略，则不需要奖品ID】*/
     private String prizeCode;
-    /** 抽象规则类型；STRATEGY-策略规则、PRIZE-奖品规则 */
+    /** 抽奖规则类型；STRATEGY-策略规则、PRIZE-奖品规则 */
     private String type;
     /** 抽奖规则类型【random-随机值计算、lock-抽奖几次后解锁、lucky_prize-幸运奖(兜底奖品)】*/
     private String model;

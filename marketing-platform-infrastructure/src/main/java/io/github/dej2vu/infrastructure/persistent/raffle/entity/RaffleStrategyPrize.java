@@ -21,9 +21,9 @@ public class RaffleStrategyPrize {
     private String strategyCode;
     /** 奖品编码 - 内部流转使用 */
     private String prizeCode;
-    /** 抽奖奖品标题 */
+    /** 奖品标题 */
     private String title;
-    /** 抽奖奖品副标题 */
+    /** 奖品副标题 */
     private String subtitle;
     /** 奖品总库存量 */
     private Integer totalInventory;
