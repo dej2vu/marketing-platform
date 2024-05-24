@@ -17,10 +17,11 @@
         <result column="update_time" property="updateTime"/>
     </resultMap>
 
-    <select id="findAll" resultMap="dataMap">
+    <select id="findByStrategyCode" resultMap="dataMap">
         select id, strategy_code, prize_code, title, subtitle,
                total_inventory, surplus_inventory, rate, rule_models, sort
-        from raffle_strategy_award
+        from raffle_strategy_prize
+        where strategy_code = #{strategyCode}
     </select>
 
 </mapper>
