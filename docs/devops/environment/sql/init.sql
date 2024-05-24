@@ -1,10 +1,10 @@
 
 SET NAMES utf8mb4;
 
-CREATE database if NOT EXISTS `marketing_platform` default character set utf8mb4 collate utf8mb4_0900_ai_ci;
-use `marketing_platform`;
+CREATE database if NOT EXISTS `marketing-platform` default character set utf8mb4 collate utf8mb4_0900_ai_ci;
+use `marketing-platform`;
 
-# 转储表 award
+# 转储表 prize
 # ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `prize`;
