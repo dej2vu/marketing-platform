@@ -5,42 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97ff118a-8ce3-43fa-8082-65877f2f1ab7" name="Changes" comment="feat(init): Project init">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/devops/database/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/devops/database/sql/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-adapter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-application/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-constant/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-constant/src/main/java/io/github/dej2vu/constant/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/award/entity/Award.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/award/mapper/AwardMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/strategy/entity/Strategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/strategy/entity/StrategyAward.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/strategy/entity/StrategyRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/strategy/mapper/StrategyAwardMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/strategy/mapper/StrategyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/strategy/mapper/StrategyRuleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/java/io/github/dej2vu/MarketingPlatformStarter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/award_mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/strategy_award_mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/strategy_mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/strategy_rule_mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/mapper/RaffleStrategyPrizeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/devops/database/sql/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docs/devops/database/sql/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/award/entity/Award.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/prize/entity/Prize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/award/mapper/AwardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/prize/mapper/PrizeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/strategy/entity/Strategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/entity/RaffleStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/strategy/entity/StrategyAward.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/entity/RaffleStrategyPrize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/strategy/entity/StrategyRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/entity/RaffleStrategyRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/strategy/mapper/StrategyAwardMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/strategy/mapper/StrategyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/mapper/RaffleStrategyMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/strategy/mapper/StrategyRuleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/mapper/RaffleStrategyRuleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/award_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/prize_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/strategy_award_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/raffle_strategy_prize_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/strategy_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/raffle_strategy_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/strategy_rule_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/raffle_strategy_rule_mapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,20 +33,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/20140523-orm" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "dej2vu"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dej2vu&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:dej2vu/marketing-platform.git",
-    "accountId": "28f47cc8-b687-43c9-bfb5-06ba8eca4fff"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:dej2vu/marketing-platform.git&quot;,
+    &quot;accountId&quot;: &quot;28f47cc8-b687-43c9-bfb5-06ba8eca4fff&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -99,7 +82,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.MarketingPlatformStarter.executor": "Run",
     "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "feature/20240524-assemble-strategy",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/dej2vu/Documents/Workspace/IntelliJ IDEA/dej2vu.tech/marketing-platform/marketing-platform-starter/src/main/resources",
     "node.js.detected.package.eslint": "true",
@@ -208,6 +191,23 @@
       <workItem from="1715942727233" duration="1371000" />
       <workItem from="1716385547271" duration="19458000" />
     </task>
+    <task id="LOCAL-00001" summary="feat(init): Fix .gitignore">
+      <option name="closed" value="true" />
+      <created>1716502126315</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716502126315</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat(init): Project init">
+      <option name="closed" value="true" />
+      <created>1716502256846</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716502256846</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.github.dej2vu.infrastructure.persistent.raffle.mapper.RaffleStrategyPrizeMapper">
+
+    <resultMap id="dataMap" type="io.github.dej2vu.infrastructure.persistent.raffle.entity.RaffleStrategyPrize">
+        <id column="id" property="id"/>
+        <result column="strategy_code" property="strategyCode"/>
+        <result column="prize_code" property="prizeCode"/>
+        <result column="title" property="title"/>
+        <result column="subtitle" property="subtitle"/>
+        <result column="total_inventory" property="totalInventory"/>
+        <result column="surplus_inventory" property="surplusInventory"/>
+        <result column="rate" property="rate"/>
+        <result column="rule_models" property="ruleModels"/>
+        <result column="sort" property="sort"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <select id="findAll" resultMap="dataMap">
+        select id, strategy_code, prize_code, title, subtitle,
+               total_inventory, surplus_inventory, rate, rule_models, sort
+        from raffle_strategy_award
+    </select>
+
+</mapper>

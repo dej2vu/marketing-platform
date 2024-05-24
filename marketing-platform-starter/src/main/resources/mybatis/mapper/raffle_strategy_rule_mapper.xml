@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.github.dej2vu.infrastructure.persistent.raffle.mapper.RaffleStrategyRuleMapper">
+
+    <resultMap id="dataMap" type="io.github.dej2vu.infrastructure.persistent.raffle.entity.RaffleStrategyRule">
+        <id column="id" property="id"/>
+        <result column="strategy_code" property="strategyCode"/>
+        <result column="prize_code" property="prizeCode"/>
+        <result column="type" property="type"/>
+        <result column="model" property="model"/>
+        <result column="value" property="value"/>
+        <result column="description" property="description"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <select id="findAll" resultMap="dataMap">
+        select id, strategy_code, prize_code, type, model, `value`, description
+        from raffle_strategy_rule
+    </select>
+
+</mapper>

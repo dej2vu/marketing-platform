@@ -1,4 +1,4 @@
-package io.github.dej2vu.infrastructure.persistent.strategy.entity;
+package io.github.dej2vu.infrastructure.persistent.raffle.entity;
 
 import lombok.Data;
 
@@ -13,24 +13,24 @@ import java.util.Date;
  * @create 2024-05-24
  */
 @Data
-public class StrategyAward {
+public class RaffleStrategyPrize {
 
     /** 自增ID */
     private Long id;
-    /** 抽奖策略ID */
-    private Long strategyId;
-    /** 抽奖奖品ID - 内部流转使用 */
-    private Integer awardId;
+    /** 抽奖策略编码 */
+    private String strategyCode;
+    /** 奖品编码 - 内部流转使用 */
+    private String prizeCode;
     /** 抽奖奖品标题 */
-    private String awardTitle;
+    private String title;
     /** 抽奖奖品副标题 */
-    private String awardSubtitle;
-    /** 奖品库存总量 */
-    private Integer awardCount;
-    /** 奖品库存剩余 */
-    private Integer awardCountSurplus;
+    private String subtitle;
+    /** 奖品总库存量 */
+    private Integer totalInventory;
+    /** 奖品剩余库存量 */
+    private Integer surplusInventory;
     /** 奖品中奖概率 */
-    private BigDecimal awardRate;
+    private BigDecimal rate;
     /** 规则模型，rule配置的模型同步到此表，便于使用 */
     private String ruleModels;
     /** 排序 */
