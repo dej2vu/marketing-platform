@@ -1,6 +1,6 @@
 package io.github.dej2vu.infrastructure.persistent.raffle.mapper;
 
-import io.github.dej2vu.infrastructure.persistent.raffle.entity.RaffleStrategyRule;
+import io.github.dej2vu.infrastructure.persistent.raffle.model.RaffleStrategyRulePO;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -14,6 +14,6 @@ import java.util.List;
 @Mapper
 public interface RaffleStrategyRuleMapper {
 
-    List<RaffleStrategyRule> findAll();
+    List<RaffleStrategyRulePO> findAll();
 
 }

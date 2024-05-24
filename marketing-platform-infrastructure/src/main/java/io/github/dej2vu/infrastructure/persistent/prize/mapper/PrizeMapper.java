@@ -1,6 +1,6 @@
 package io.github.dej2vu.infrastructure.persistent.prize.mapper;
 
-import io.github.dej2vu.infrastructure.persistent.prize.entity.Prize;
+import io.github.dej2vu.infrastructure.persistent.prize.model.PrizePO;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -14,6 +14,6 @@ import java.util.List;
 @Mapper
 public interface PrizeMapper {
 
-    List<Prize> findAll();
+    List<PrizePO> findAll();
 
 }

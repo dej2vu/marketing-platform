@@ -1,4 +1,4 @@
-package io.github.dej2vu.infrastructure.persistent.raffle.entity;
+package io.github.dej2vu.infrastructure.persistent.raffle.model;
 
 import lombok.Data;
 
@@ -11,7 +11,7 @@ import java.util.Date;
  * @create 2024-05-24
  */
 @Data
-public class RaffleStrategy {
+public class RaffleStrategyPO {
 
     /** 自增ID */
     private Long id;

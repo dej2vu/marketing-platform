@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="io.github.dej2vu.infrastructure.persistent.prize.mapper.PrizeMapper">
 
-    <resultMap id="dataMap" type="io.github.dej2vu.infrastructure.persistent.prize.entity.Prize">
+    <resultMap id="dataMap" type="io.github.dej2vu.infrastructure.persistent.prize.model.PrizePO">
         <id column="id" property="id"/>
         <result column="code" property="code"/>
         <result column="key" property="key"/>

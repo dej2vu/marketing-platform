@@ -1,4 +1,4 @@
-package io.github.dej2vu.infrastructure.persistent.prize.entity;
+package io.github.dej2vu.infrastructure.persistent.prize.model;
 
 import lombok.Data;
 
@@ -11,7 +11,7 @@ import java.util.Date;
  * @create 2024-05-24
  */
 @Data
-public class Prize {
+public class PrizePO {
 
     /** 自增ID */
     private Long id;
