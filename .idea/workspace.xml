@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97ff118a-8ce3-43fa-8082-65877f2f1ab7" name="Changes" comment="feat: Assemble Strategy">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/config/RedisClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/config/RedisClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/devops/environment/sql/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docs/devops/environment/sql/init.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.MarketingPlatformStarter.executor": "Run",
     "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "feature/20240524-assemble-strategy",
+    "git-widget-placeholder": "feature/20240524-assemble-random-strategy",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/dej2vu/Documents/Workspace/IntelliJ IDEA/dej2vu.tech/marketing-platform/marketing-platform-starter/src/main/resources/mybatis/config",
     "node.js.detected.package.eslint": "true",
@@ -111,11 +110,11 @@
       <recent name="$PROJECT_DIR$/docs/devops/environment" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.github.dej2vu.domain.raffle.service" />
       <recent name="io.github.dej2vu.infrastructure" />
       <recent name="io.github.dej2vu.constant.exception" />
       <recent name="io.github.dej2vu.constant.event" />
       <recent name="io.github.dej2vu.constant.response" />
-      <recent name="io.github.dej2vu.constant" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.RaffleServiceTest.should_success_return_prize_code">
