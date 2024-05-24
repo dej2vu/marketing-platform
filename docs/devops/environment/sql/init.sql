@@ -45,6 +45,7 @@ DROP TABLE IF EXISTS `raffle_strategy`;
 CREATE TABLE `raffle_strategy` (
                             `id` bigint(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
                             `code` varchar(8) NOT NULL COMMENT '抽奖策略编码',
+                            `rule_models` varchar(256) DEFAULT NULL COMMENT '规则模型，rule配置的模型同步到此表，便于使用',
                             `description` varchar(128) NOT NULL COMMENT '抽奖策略描述',
                             `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
                             `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
@@ -56,7 +57,7 @@ LOCK TABLES `raffle_strategy` WRITE;
 
 INSERT INTO `raffle_strategy` (`id`, `code`, `description`)
 VALUES
-    (1,'100001','抽奖策略');
+    (1,'100001', 'weight,blacklist','抽奖策略');
 
 UNLOCK TABLES;
 

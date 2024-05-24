@@ -1,10 +1,7 @@
 package io.github.dej2vu.domain;
 
 
-import com.alibaba.fastjson.JSON;
-import io.github.dej2vu.domain.raffle.service.RaffleService;
-import io.github.dej2vu.infrastructure.persistent.prize.mapper.PrizeMapper;
-import io.github.dej2vu.infrastructure.persistent.prize.model.PrizePO;
+import io.github.dej2vu.domain.raffle.service.RaffleStrategyService;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
@@ -23,22 +20,33 @@ import java.util.stream.IntStream;
 @Slf4j
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
-public class RaffleServiceTest {
+public class RaffleStrategyServiceTest {
 
     @Resource
-    private RaffleService raffleService;
+    private RaffleStrategyService raffleStrategyService;
 
     @Test
     public void should_success_assemble_strategy() {
-        boolean result = raffleService.assembleStrategy("100001");
+        boolean result = raffleStrategyService.assemble("100001");
         Assertions.assertTrue(result);
     }
 
     @Test
-    public void should_success_return_prize_code() {
+    public void should_success_return_prize_code_when_use_random_strategy() {
 
         String prizeCodes = IntStream.range(0, 100)
-                .mapToObj(i -> raffleService.getRandomResult("100001"))
+                .mapToObj(i -> raffleStrategyService.dispatchWithRandom("100001"))
+                .collect(Collectors.joining(", ", "{", "}"));
+
+        log.info("随机抽取100次：prizeCodes:{}", prizeCodes);
+    }
+
+
+    @Test
+    public void should_success_return_prize_code_when_use_weight_strategy() {
+
+        String prizeCodes = IntStream.range(0, 100)
+                .mapToObj(i -> raffleStrategyService.dispatchWithRuleWeightValue("100001", "6000:102,103,104,105,106,107,108,109"))
                 .collect(Collectors.joining(", ", "{", "}"));
 
         log.info("随机抽取100次：prizeCodes:{}", prizeCodes);

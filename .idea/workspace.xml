@@ -4,18 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97ff118a-8ce3-43fa-8082-65877f2f1ab7" name="Changes" comment="feat: add RedisService">
-      <change afterPath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/model/RaffleStrategyPrize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/convertor/RaffleStrategyPrizeConvertor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketing-platform-starter/src/test/java/io/github/dej2vu/domain/RaffleServiceTest.java" afterDir="false" />
+    <list default="true" id="97ff118a-8ce3-43fa-8082-65877f2f1ab7" name="Changes" comment="fix: fix version">
+      <change afterPath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/model/RaffleStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/model/RaffleStrategyRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/service/RaffleStrategyDispatcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-constant/src/main/java/io/github/dej2vu/constant/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-constant/src/main/java/io/github/dej2vu/constant/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/devops/environment/sql/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docs/devops/environment/sql/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/model/RaffleStrategyPrize.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/model/RaffleStrategyPrize.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/repository/RaffleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/repository/RaffleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/service/RaffleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/service/RaffleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/mapper/RaffleStrategyPrizeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/mapper/RaffleStrategyPrizeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/service/RaffleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/service/RaffleStrategyAssembler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/service/RaffleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/service/RaffleStrategyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/mapper/RaffleStrategyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/mapper/RaffleStrategyMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/mapper/RaffleStrategyRuleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/mapper/RaffleStrategyRuleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/model/RaffleStrategyPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/model/RaffleStrategyPO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/repository/RaffleRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/repository/RaffleRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/raffle_strategy_prize_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/raffle_strategy_prize_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/raffle_strategy_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/raffle_strategy_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/raffle_strategy_rule_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/raffle_strategy_rule_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-starter/src/test/java/io/github/dej2vu/domain/RaffleServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-starter/src/test/java/io/github/dej2vu/domain/RaffleStrategyServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +85,8 @@
     "JUnit.RaffleServiceTest.should_success_all_prizes.executor": "Run",
     "JUnit.RaffleServiceTest.should_success_assemble_strategy.executor": "Debug",
     "JUnit.RaffleServiceTest.should_success_return_prize_code.executor": "Run",
+    "JUnit.RaffleStrategyServiceTest.should_success_assemble_strategy.executor": "Debug",
+    "JUnit.RaffleStrategyServiceTest.should_success_return_prize_code_when_use_weight_strategy.executor": "Debug",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -87,7 +95,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.MarketingPlatformStarter.executor": "Run",
     "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "feature/20240524-assemble-strategy",
+    "git-widget-placeholder": "feature/20240524-assemble-weight-strategy",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/dej2vu/Documents/Workspace/IntelliJ IDEA/dej2vu.tech/marketing-platform/marketing-platform-starter/src/main/resources/mybatis/config",
     "node.js.detected.package.eslint": "true",
@@ -120,31 +128,15 @@
       <recent name="$PROJECT_DIR$/docs/devops/environment" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.github.dej2vu.domain.raffle.model" />
+      <recent name="io.github.dej2vu.domain.raffle.service" />
       <recent name="io.github.dej2vu.infrastructure" />
       <recent name="io.github.dej2vu.constant.exception" />
       <recent name="io.github.dej2vu.constant.event" />
-      <recent name="io.github.dej2vu.constant.response" />
-      <recent name="io.github.dej2vu.constant" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RaffleServiceTest.should_success_return_prize_code">
-    <configuration name="PrizeMapperTest.should_return_all_prizes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="marketing-platform-starter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.dej2vu.infrastructure.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.dej2vu.infrastructure" />
-      <option name="MAIN_CLASS_NAME" value="io.github.dej2vu.infrastructure.PrizeMapperTest" />
-      <option name="METHOD_NAME" value="should_return_all_prizes" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RaffleServiceTest.should_success_all_prizes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RaffleStrategyServiceTest.should_success_return_prize_code_when_use_weight_strategy">
+    <configuration name="RaffleStrategyServiceTest.should_success_all_prizes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="marketing-platform-starter" />
       <extension name="coverage">
         <pattern>
@@ -153,14 +145,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="io.github.dej2vu.domain" />
-      <option name="MAIN_CLASS_NAME" value="io.github.dej2vu.domain.RaffleServiceTest" />
+      <option name="MAIN_CLASS_NAME" value="io.github.dej2vu.domain.RaffleStrategyServiceTest" />
       <option name="METHOD_NAME" value="should_success_all_prizes" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RaffleServiceTest.should_success_assemble_strategy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RaffleStrategyServiceTest.should_success_assemble_strategy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="marketing-platform-starter" />
       <extension name="coverage">
         <pattern>
@@ -169,14 +161,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="io.github.dej2vu.domain" />
-      <option name="MAIN_CLASS_NAME" value="io.github.dej2vu.domain.RaffleServiceTest" />
+      <option name="MAIN_CLASS_NAME" value="io.github.dej2vu.domain.RaffleStrategyServiceTest" />
       <option name="METHOD_NAME" value="should_success_assemble_strategy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RaffleServiceTest.should_success_return_prize_code" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RaffleStrategyServiceTest.should_success_return_prize_code" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="marketing-platform-starter" />
       <extension name="coverage">
         <pattern>
@@ -185,8 +177,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="io.github.dej2vu.domain" />
-      <option name="MAIN_CLASS_NAME" value="io.github.dej2vu.domain.RaffleServiceTest" />
+      <option name="MAIN_CLASS_NAME" value="io.github.dej2vu.domain.RaffleStrategyServiceTest" />
       <option name="METHOD_NAME" value="should_success_return_prize_code" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RaffleStrategyServiceTest.should_success_return_prize_code_when_use_weight_strategy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="marketing-platform-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.dej2vu.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.dej2vu.domain" />
+      <option name="MAIN_CLASS_NAME" value="io.github.dej2vu.domain.RaffleStrategyServiceTest" />
+      <option name="METHOD_NAME" value="should_success_return_prize_code_when_use_weight_strategy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -220,11 +228,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RaffleServiceTest.should_success_return_prize_code" />
-        <item itemvalue="JUnit.RaffleServiceTest.should_success_assemble_strategy" />
-        <item itemvalue="JUnit.RaffleServiceTest.should_success_all_prizes" />
+        <item itemvalue="JUnit.RaffleStrategyServiceTest.should_success_return_prize_code_when_use_weight_strategy" />
+        <item itemvalue="JUnit.RaffleStrategyServiceTest.should_success_assemble_strategy" />
+        <item itemvalue="JUnit.RaffleStrategyServiceTest.should_success_return_prize_code" />
+        <item itemvalue="JUnit.RaffleStrategyServiceTest.should_success_all_prizes" />
         <item itemvalue="Spring Boot.MarketingPlatformStarter" />
-        <item itemvalue="JUnit.PrizeMapperTest.should_return_all_prizes" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +299,31 @@
       <option name="project" value="LOCAL" />
       <updated>1716512929538</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: Assemble Strategy&#10;&#10;(cherry picked from commit 1a1b420da84e80aa973d7a0e6cbcbb186ec844f0)">
+      <option name="closed" value="true" />
+      <created>1716529250107</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716529250107</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix: Redis可视化界面乱码&#10;&#10;(cherry picked from commit c4b6854edffe94aa31040420cd2e21b1eb8aef84)">
+      <option name="closed" value="true" />
+      <created>1716529288202</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716529288202</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix: fix version">
+      <option name="closed" value="true" />
+      <created>1716529354286</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716529354286</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,6 +345,9 @@
     <MESSAGE value="feat(init): Rename" />
     <MESSAGE value="style: Rename" />
     <MESSAGE value="feat: add RedisService" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add RedisService" />
+    <MESSAGE value="feat: Assemble Strategy&#10;&#10;(cherry picked from commit 1a1b420da84e80aa973d7a0e6cbcbb186ec844f0)" />
+    <MESSAGE value="fix: Redis可视化界面乱码&#10;&#10;(cherry picked from commit c4b6854edffe94aa31040420cd2e21b1eb8aef84)" />
+    <MESSAGE value="fix: fix version" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fix version" />
   </component>
 </project>

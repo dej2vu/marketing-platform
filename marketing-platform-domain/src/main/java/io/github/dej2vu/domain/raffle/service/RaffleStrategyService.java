@@ -1,6 +1,8 @@
 package io.github.dej2vu.domain.raffle.service;
 
+import io.github.dej2vu.domain.raffle.model.RaffleStrategy;
 import io.github.dej2vu.domain.raffle.model.RaffleStrategyPrize;
+import io.github.dej2vu.domain.raffle.model.RaffleStrategyRule;
 import io.github.dej2vu.domain.raffle.repository.RaffleRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -8,33 +10,44 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.security.SecureRandom;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 @Service
 @RequiredArgsConstructor
-public class RaffleServiceImpl implements RaffleService {
+public class RaffleStrategyService implements RaffleStrategyAssembler, RaffleStrategyDispatcher {
 
     private final RaffleRepository raffleRepository;
 
     @Override
-    public boolean assembleStrategy(String strategyCode) {
+    public boolean assemble(String strategyCode) {
         // 1. 获取策略配置
         List<RaffleStrategyPrize> strategyPrizes = raffleRepository.findStrategyPrizeByStrategyCode(strategyCode);
+        // 2. 根据 strategyCode 构造奖品查找表
+        assemblePrizeSearchTable(strategyCode, strategyPrizes);
 
-        // 2. 构造奖品查找表
-        Map<Integer, String> prizeSearchTable = buildPrizeSearchTable(strategyPrizes);
+        RaffleStrategy raffleStrategy = raffleRepository.findStrategyByStrategyCode(strategyCode);
+        String ruleWeight = raffleStrategy.getRuleWeight();
+        if (Objects.isNull(ruleWeight)) return true;
 
-        // 3. 存储至 Redis
-        raffleRepository.cachePrizeSearchTable(strategyCode, prizeSearchTable);
+        RaffleStrategyRule raffleStrategyRule = raffleRepository.findStrategyRuleByStrategyCodeAndRuleModel(strategyCode, ruleWeight);
+        if (Objects.isNull(raffleStrategyRule)) {
+            throw new RuntimeException();
+        }
+        Map<String, List<String>> ruleWeightValueMap = raffleStrategyRule.getRuleWeightValues();
+        Set<String> keys = ruleWeightValueMap.keySet();
+        for (String key : keys) {
+            List<String> ruleWeightValues = ruleWeightValueMap.get(key);
+            List<RaffleStrategyPrize> strategyPrizesClone = new ArrayList<>(strategyPrizes);
+            strategyPrizesClone.removeIf(entity -> !ruleWeightValues.contains(entity.getPrizeCode()));
+            assemblePrizeSearchTable(String.valueOf(strategyCode).concat("_").concat(key), strategyPrizesClone);
+        }
+
         return true;
     }
 
-    private Map<Integer, String> buildPrizeSearchTable(List<RaffleStrategyPrize> strategyPrizes){
+    private void assemblePrizeSearchTable(String key, List<RaffleStrategyPrize> strategyPrizes){
         // 1. 获取 minRate
         BigDecimal minRate = strategyPrizes.stream()
                 .map(RaffleStrategyPrize::getRate)
@@ -63,16 +76,28 @@ public class RaffleServiceImpl implements RaffleService {
         Collections.shuffle(prizeSearchTable);
 
         // 6. 生成奖品查找表(HashMap), key为乱序后的index，value为奖品编码，后续可使用随机值作为key来查找对用的奖品编码
-        return IntStream.range(0, prizeSearchTable.size())
+        Map<Integer, String> shuffledPrizeSearchTable =  IntStream.range(0, prizeSearchTable.size())
                 .boxed()
                 .collect(Collectors.toMap(i -> i, prizeSearchTable::get));
+
+
+        // 3. 存储至 Redis
+        raffleRepository.cachePrizeSearchTable(key, shuffledPrizeSearchTable);
     }
 
     @Override
-    public String getRandomResult(String strategyCode) {
+    public String dispatchWithRandom(String strategyCode) {
 
         int rateRange = raffleRepository.getRateRange(strategyCode);
 
         return raffleRepository.getPrizeCodeFromPrizeSearchTable(strategyCode, new SecureRandom().nextInt(rateRange));
+    }
+
+    @Override
+    public String dispatchWithRuleWeightValue(String strategyCode, String ruleWeightValue) {
+        String key = String.valueOf(strategyCode).concat("_").concat(ruleWeightValue);
+        int rateRange = raffleRepository.getRateRange(key);
+        // 通过生成的随机值，获取概率值奖品查找表的结果
+        return raffleRepository.getPrizeCodeFromPrizeSearchTable(key, new SecureRandom().nextInt(rateRange));
     }
 }

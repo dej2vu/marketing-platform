@@ -19,4 +19,10 @@
         from raffle_strategy_rule
     </select>
 
+    <select id="findByStrategyCodeAndRuleModel" resultMap="dataMap">
+        select  id, strategy_code, prize_code, type, model, `value`, description
+        from raffle_strategy_rule
+        where strategy_code = #{strategyCode} and model = #{ruleModel}
+    </select>
+
 </mapper>

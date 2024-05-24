@@ -17,6 +17,8 @@ public class RaffleStrategyPO {
     private Long id;
     /** 抽奖策略编码 */
     private String code;
+    /** 规则模型，rule配置的模型同步到此表，便于使用 */
+    private String ruleModels;
     /** 抽奖策略描述 */
     private String description;
     /** 创建时间 */
