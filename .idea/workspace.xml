@@ -5,18 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97ff118a-8ce3-43fa-8082-65877f2f1ab7" name="Changes" comment="style: Rename">
-      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/prize/entity/Prize.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/prize/model/PrizePO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/prize/mapper/PrizeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/prize/mapper/PrizeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/entity/RaffleStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/model/RaffleStrategyPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/entity/RaffleStrategyPrize.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/model/RaffleStrategyPrizePO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/entity/RaffleStrategyRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/model/RaffleStrategyRulePO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/mapper/RaffleStrategyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/mapper/RaffleStrategyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/mapper/RaffleStrategyPrizeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/mapper/RaffleStrategyPrizeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/mapper/RaffleStrategyRuleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/mapper/RaffleStrategyRuleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/prize_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/prize_mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/raffle_strategy_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/raffle_strategy_mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/raffle_strategy_prize_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/raffle_strategy_prize_mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/raffle_strategy_rule_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-starter/src/main/resources/mybatis/mapper/raffle_strategy_rule_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/devops/environment/redis/redis.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/repository/RaffleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/service/RaffleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-domain/src/main/java/io/github/dej2vu/domain/raffle/service/RaffleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/config/RedisClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/config/RedisClientConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/raffle/repository/RaffleRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/redis/RedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/redis/RedissonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/devops/database/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/devops/environment/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/devops/database/sql/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docs/devops/environment/mysql/sql/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketing-platform-infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/marketing-platform-infrastructure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -65,42 +68,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.database.mysql: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.database: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.postgresql: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.MarketingPlatformStarter.executor&quot;: &quot;Run&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/20240524-assemble-strategy&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/dej2vu/Documents/Workspace/IntelliJ IDEA/dej2vu.tech/marketing-platform/marketing-platform-starter/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ssh.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Test.executor": "Run",
+    "Docker.database.mysql: Compose Deployment.executor": "Run",
+    "Docker.database: Compose Deployment.executor": "Run",
+    "Docker.postgresql: Compose Deployment.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.MarketingPlatformStarter.executor": "Run",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "feature/20240524-assemble-strategy",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/dej2vu/Documents/Workspace/IntelliJ IDEA/dej2vu.tech/marketing-platform/docs/devops/environment/redis",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "ssh.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/devops/environment/redis" />
+      <recent name="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/config" />
+      <recent name="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure" />
       <recent name="$PROJECT_DIR$/marketing-platform-starter/src/main/resources" />
       <recent name="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent/award" />
-      <recent name="$PROJECT_DIR$/marketing-platform-infrastructure/src/main/java/io/github/dej2vu/infrastructure/persistent" />
-      <recent name="$PROJECT_DIR$/docs/devops/postgresql" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/devops/environment" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="io.github.dej2vu.constant.exception" />
@@ -109,7 +116,7 @@
       <recent name="io.github.dej2vu.constant" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.database: Compose Deployment">
+  <component name="RunManager" selected="Docker.environment: Compose Deployment">
     <configuration name="MarketingPlatformStarter (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="marketing-platform-starter" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.dej2vu.MarketingPlatformStarter" />
@@ -136,16 +143,16 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="database: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="environment: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="envFilePath" value="" />
-          <option name="sourceFilePath" value="docs/devops/database/docker-compose.yml" />
+          <option name="sourceFilePath" value="docs/devops/environment/docker-compose.yml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="database.mysql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="environment.mysql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
@@ -153,7 +160,7 @@
               <option value="mysql" />
             </list>
           </option>
-          <option name="sourceFilePath" value="docs/devops/database/docker-compose.yml" />
+          <option name="sourceFilePath" value="docs/devops/environment/docker-compose.yml" />
         </settings>
       </deployment>
       <method v="2" />
@@ -161,10 +168,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.MarketingPlatformStarter" />
-        <item itemvalue="Docker.database: Compose Deployment" />
-        <item itemvalue="Docker.database.mysql: Compose Deployment" />
+        <item itemvalue="Docker.environment: Compose Deployment" />
+        <item itemvalue="Docker.environment.mysql: Compose Deployment" />
         <item itemvalue="Spring Boot.MarketingPlatformStarter" />
-        <item itemvalue="Docker.database: Compose Deployment" />
+        <item itemvalue="Docker.environment: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716509463920</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="style: Rename">
+      <option name="closed" value="true" />
+      <created>1716510832625</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716510832625</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
