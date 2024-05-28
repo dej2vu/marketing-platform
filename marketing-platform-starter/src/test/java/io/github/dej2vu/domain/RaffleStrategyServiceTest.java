@@ -1,7 +1,7 @@
 package io.github.dej2vu.domain;
 
 
-import io.github.dej2vu.domain.raffle.service.RaffleStrategyService;
+import io.github.dej2vu.domain.raffle.service.strategy.RaffleStrategyService;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
@@ -46,7 +46,7 @@ public class RaffleStrategyServiceTest {
     public void should_success_return_prize_code_when_use_weight_strategy() {
 
         String prizeCodes = IntStream.range(0, 100)
-                .mapToObj(i -> raffleStrategyService.dispatchWithRuleWeightValue("100001", "6000:102,103,104,105,106,107,108,109"))
+                .mapToObj(i -> raffleStrategyService.dispatchWithWeight("100001", "6000:102,103,104,105,106,107,108,109"))
                 .collect(Collectors.joining(", ", "{", "}"));
 
         log.info("随机抽取100次：prizeCodes:{}", prizeCodes);

@@ -1,4 +1,4 @@
-package io.github.dej2vu.domain.raffle.service;
+package io.github.dej2vu.domain.raffle.service.strategy;
 
 public interface RaffleStrategyDispatcher {
 
@@ -10,6 +10,6 @@ public interface RaffleStrategyDispatcher {
      */
     String dispatchWithRandom(String strategyCode);
 
-    String dispatchWithRuleWeightValue(String strategyCode, String ruleWeightValue);
+    String dispatchWithWeight(String strategyCode, String weightKey);
 
 }

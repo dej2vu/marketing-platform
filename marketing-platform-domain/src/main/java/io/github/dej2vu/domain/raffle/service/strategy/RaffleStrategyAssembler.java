@@ -1,4 +1,4 @@
-package io.github.dej2vu.domain.raffle.service;
+package io.github.dej2vu.domain.raffle.service.strategy;
 
 public interface RaffleStrategyAssembler {
 

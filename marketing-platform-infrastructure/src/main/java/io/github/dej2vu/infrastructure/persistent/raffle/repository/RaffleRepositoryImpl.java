@@ -1,6 +1,7 @@
 package io.github.dej2vu.infrastructure.persistent.raffle.repository;
 
 import io.github.dej2vu.constant.Constants;
+import io.github.dej2vu.constant.enums.RuleModel;
 import io.github.dej2vu.domain.raffle.model.RaffleStrategy;
 import io.github.dej2vu.domain.raffle.model.RaffleStrategyPrize;
 import io.github.dej2vu.domain.raffle.model.RaffleStrategyRule;
@@ -14,8 +15,6 @@ import io.github.dej2vu.infrastructure.persistent.raffle.model.RaffleStrategyPri
 import io.github.dej2vu.infrastructure.persistent.raffle.model.RaffleStrategyRulePO;
 import io.github.dej2vu.infrastructure.redis.RedisService;
 import jakarta.annotation.Resource;
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.CollectionUtils;
 
@@ -93,5 +92,20 @@ public class RaffleRepositoryImpl implements RaffleRepository {
     @Override
     public String getPrizeCodeFromPrizeSearchTable(String strategyCode, Integer rateKey) {
         return redisService.getFromMap(Constants.RedisKey.RAFFLE_STRATEGY_PRIZE_SEARCH_TABLE_KEY + strategyCode, rateKey);
+    }
+
+    @Override
+    public String findRuleValueByStrategyCode(String strategyCode, String prizeCode, RuleModel ruleModel) {
+        return raffleStrategyRuleMapper.findValueByStrategyCodeAndRuleModel(strategyCode, prizeCode, ruleModel.getCode());
+    }
+
+    @Override
+    public String findBlacklistRuleValueByStrategyCode(String strategyCode) {
+        return raffleStrategyRuleMapper.findValueByStrategyCodeAndRuleModel(strategyCode, null, RuleModel.BLACKLIST.getCode());
+    }
+
+    @Override
+    public String findWeightRuleValueByStrategyCode(String strategyCode) {
+        return raffleStrategyRuleMapper.findValueByStrategyCodeAndRuleModel(strategyCode, null, RuleModel.WEIGHT.getCode());
     }
 }

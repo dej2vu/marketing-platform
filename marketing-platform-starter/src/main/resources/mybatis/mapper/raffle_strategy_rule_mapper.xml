@@ -25,4 +25,13 @@
         where strategy_code = #{strategyCode} and model = #{ruleModel}
     </select>
 
+    <select id="findValueByStrategyCodeAndRuleModel" resultMap="dataMap">
+        select `value`
+        from raffle_strategy_rule
+        where strategy_code = #{strategyCode} and model = #{ruleModel}
+        <if test="prizeCode != null and prizeCode != '' ">
+            and prize_code = #{prizeCode}
+        </if>
+    </select>
+
 </mapper>

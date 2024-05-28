@@ -104,10 +104,10 @@
 
     <root level="info">
         <appender-ref ref="CONSOLE"/>
-        <!-- 异步日志-INFO -->
-        <appender-ref ref="ASYNC_FILE_INFO"/>
-        <!-- 异步日志-ERROR -->
-        <appender-ref ref="ASYNC_FILE_ERROR"/>
+<!--        &lt;!&ndash; 异步日志-INFO &ndash;&gt;-->
+<!--        <appender-ref ref="ASYNC_FILE_INFO"/>-->
+<!--        &lt;!&ndash; 异步日志-ERROR &ndash;&gt;-->
+<!--        <appender-ref ref="ASYNC_FILE_ERROR"/>-->
     </root>
 
 </configuration>

@@ -1,4 +1,4 @@
-package io.github.dej2vu.domain.raffle.service;
+package io.github.dej2vu.domain.raffle.service.strategy;
 
 import io.github.dej2vu.domain.raffle.model.RaffleStrategy;
 import io.github.dej2vu.domain.raffle.model.RaffleStrategyPrize;
@@ -87,15 +87,16 @@ public class RaffleStrategyService implements RaffleStrategyAssembler, RaffleStr
 
     @Override
     public String dispatchWithRandom(String strategyCode) {
-
+        // 获取随机指范围
         int rateRange = raffleRepository.getRateRange(strategyCode);
-
+        // 通过生成的随机值，获取概率值奖品查找表的结果
         return raffleRepository.getPrizeCodeFromPrizeSearchTable(strategyCode, new SecureRandom().nextInt(rateRange));
     }
 
     @Override
-    public String dispatchWithRuleWeightValue(String strategyCode, String ruleWeightValue) {
-        String key = String.valueOf(strategyCode).concat("_").concat(ruleWeightValue);
+    public String dispatchWithWeight(String strategyCode, String weightKey) {
+        // 获取随机指范围
+        String key = String.valueOf(strategyCode).concat("_").concat(weightKey);
         int rateRange = raffleRepository.getRateRange(key);
         // 通过生成的随机值，获取概率值奖品查找表的结果
         return raffleRepository.getPrizeCodeFromPrizeSearchTable(key, new SecureRandom().nextInt(rateRange));
