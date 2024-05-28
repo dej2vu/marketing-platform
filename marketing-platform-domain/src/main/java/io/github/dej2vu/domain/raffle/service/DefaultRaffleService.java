@@ -10,7 +10,6 @@ import io.github.dej2vu.domain.raffle.repository.RaffleRepository;
 import io.github.dej2vu.domain.raffle.service.rule.RuleHandler;
 import io.github.dej2vu.domain.raffle.service.rule.factory.RuleHandlerFactory;
 import io.github.dej2vu.domain.raffle.service.strategy.RaffleStrategyDispatcher;
-import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.stereotype.Service;
 
@@ -26,7 +25,6 @@ import java.util.Optional;
  * @author dej2vu
  * @create 2024-05-28
  */
-@Slf4j
 @Service
 public class DefaultRaffleService extends AbstractRaffleService {
 

@@ -11,7 +11,6 @@ import io.github.dej2vu.domain.raffle.repository.RaffleRepository;
 import io.github.dej2vu.domain.raffle.service.rule.RuleHandler;
 import io.github.dej2vu.domain.raffle.service.rule.annotation.HandlerTag;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.MapUtils;
 import org.springframework.stereotype.Component;
 
@@ -25,7 +24,6 @@ import static io.github.dej2vu.constant.enums.RuleModel.WEIGHT;
  * @description 【前置规则】- 根据抽奖权重返回可抽奖范围KEY
  * @create 2024-05-28
  */
-@Slf4j
 @Component
 @HandlerTag(ruleModel = WEIGHT)
 @RequiredArgsConstructor
@@ -108,7 +106,7 @@ public class WeightRuleHandler implements RuleHandler<RuleAction.PreAction> {
             }
             // 分割字符串以获取键和值
             String[] parts = ruleValueKey.split(Constants.COLON);
-            Preconditions.checkArgument(parts.length != 2,
+            Preconditions.checkArgument(parts.length == 2,
                     "weight rule invalid input format: %s", ruleValueKey);
             ruleValueMap.put(Long.parseLong(parts[0]), ruleValueKey);
         }

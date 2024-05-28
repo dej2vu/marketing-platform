@@ -25,7 +25,7 @@
         where strategy_code = #{strategyCode} and model = #{ruleModel}
     </select>
 
-    <select id="findValueByStrategyCodeAndRuleModel" resultMap="dataMap">
+    <select id="findValueByStrategyCodeAndRuleModel" resultType="java.lang.String">
         select `value`
         from raffle_strategy_rule
         where strategy_code = #{strategyCode} and model = #{ruleModel}

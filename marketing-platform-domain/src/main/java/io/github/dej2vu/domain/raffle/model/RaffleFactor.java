@@ -28,7 +28,7 @@ public class RaffleFactor {
 
 
     public void checkArguments(){
-        Preconditions.checkArgument(Strings.isNullOrEmpty(userCode));
-        Preconditions.checkArgument(Strings.isNullOrEmpty(strategyCode));
+        Preconditions.checkArgument(!Strings.isNullOrEmpty(userCode));
+        Preconditions.checkArgument(!Strings.isNullOrEmpty(strategyCode));
     }
 }

@@ -10,7 +10,6 @@ import io.github.dej2vu.domain.raffle.model.RuleAction;
 import io.github.dej2vu.domain.raffle.repository.RaffleRepository;
 import io.github.dej2vu.domain.raffle.service.strategy.RaffleStrategyDispatcher;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * @description 抽奖业务抽象类，定义抽奖的标准流程
@@ -18,7 +17,6 @@ import lombok.extern.slf4j.Slf4j;
  * @author dej2vu
  * @create 2024-05-28
  */
-@Slf4j
 @RequiredArgsConstructor
 public abstract class AbstractRaffleService implements RaffleService {
 

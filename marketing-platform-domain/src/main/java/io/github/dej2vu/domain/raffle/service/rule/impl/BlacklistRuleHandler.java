@@ -10,7 +10,6 @@ import io.github.dej2vu.domain.raffle.repository.RaffleRepository;
 import io.github.dej2vu.domain.raffle.service.rule.RuleHandler;
 import io.github.dej2vu.domain.raffle.service.rule.annotation.HandlerTag;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
@@ -24,7 +23,6 @@ import static io.github.dej2vu.constant.enums.RuleModel.BLACKLIST;
  * @author dej2vu
  * @create 2024-05-28
  */
-@Slf4j
 @Component
 @HandlerTag(ruleModel = BLACKLIST)
 @RequiredArgsConstructor
