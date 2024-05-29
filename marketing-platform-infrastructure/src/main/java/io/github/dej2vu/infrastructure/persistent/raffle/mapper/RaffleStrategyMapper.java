@@ -16,6 +16,4 @@ public interface RaffleStrategyMapper {
 
     RaffleStrategyPO findByCode(String code);
 
-    List<RaffleStrategyPO> findAll();
-
 }

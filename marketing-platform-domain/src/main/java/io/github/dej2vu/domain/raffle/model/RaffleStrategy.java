@@ -7,8 +7,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
-
 @Data
 @Builder
 @NoArgsConstructor
@@ -27,7 +25,7 @@ public class RaffleStrategy {
         return ruleModels.split(Constants.SPLIT);
     }
 
-    public String getRuleWeight() {
+    public String getWeightRuleModel() {
         String[] ruleModels = this.ruleModels();
         if (null == ruleModels) return null;
         for (String ruleModel : ruleModels) {

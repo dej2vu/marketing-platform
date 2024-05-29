@@ -1,5 +1,6 @@
 package io.github.dej2vu.domain.raffle.service.strategy;
 
+import com.google.common.base.Preconditions;
 import io.github.dej2vu.domain.raffle.model.RaffleStrategy;
 import io.github.dej2vu.domain.raffle.model.RaffleStrategyPrize;
 import io.github.dej2vu.domain.raffle.model.RaffleStrategyRule;
@@ -28,19 +29,18 @@ public class RaffleStrategyService implements RaffleStrategyAssembler, RaffleStr
         assemblePrizeSearchTable(strategyCode, strategyPrizes);
 
         RaffleStrategy raffleStrategy = raffleRepository.findStrategyByStrategyCode(strategyCode);
-        String ruleWeight = raffleStrategy.getRuleWeight();
-        if (Objects.isNull(ruleWeight)) return true;
+        String weightRuleModel = raffleStrategy.getWeightRuleModel();
+        if (Objects.isNull(weightRuleModel)) return true;
 
-        RaffleStrategyRule raffleStrategyRule = raffleRepository.findStrategyRuleByStrategyCodeAndRuleModel(strategyCode, ruleWeight);
-        if (Objects.isNull(raffleStrategyRule)) {
-            throw new RuntimeException();
-        }
-        Map<String, List<String>> ruleWeightValueMap = raffleStrategyRule.getRuleWeightValues();
-        Set<String> keys = ruleWeightValueMap.keySet();
+        RaffleStrategyRule raffleStrategyRule = raffleRepository.findStrategyRuleByStrategyCodeAndRuleModel(strategyCode, weightRuleModel);
+        Preconditions.checkArgument(Objects.nonNull(raffleStrategyRule));
+
+        Map<String, List<String>> weightRuleValueMap = raffleStrategyRule.getWeightRuleValues();
+        Set<String> keys = weightRuleValueMap.keySet();
         for (String key : keys) {
-            List<String> ruleWeightValues = ruleWeightValueMap.get(key);
+            List<String> weightRuleValues = weightRuleValueMap.get(key);
             List<RaffleStrategyPrize> strategyPrizesClone = new ArrayList<>(strategyPrizes);
-            strategyPrizesClone.removeIf(entity -> !ruleWeightValues.contains(entity.getPrizeCode()));
+            strategyPrizesClone.removeIf(entity -> !weightRuleValues.contains(entity.getPrizeCode()));
             assemblePrizeSearchTable(String.valueOf(strategyCode).concat("_").concat(key), strategyPrizesClone);
         }
 

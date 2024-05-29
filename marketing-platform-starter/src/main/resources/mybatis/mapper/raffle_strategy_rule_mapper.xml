@@ -14,11 +14,6 @@
         <result column="update_time" property="updateTime"/>
     </resultMap>
 
-    <select id="findAll" resultMap="dataMap">
-        select id, strategy_code, prize_code, type, model, `value`, description
-        from raffle_strategy_rule
-    </select>
-
     <select id="findByStrategyCodeAndRuleModel" resultMap="dataMap">
         select  id, strategy_code, prize_code, type, model, `value`, description
         from raffle_strategy_rule
