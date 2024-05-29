@@ -4,6 +4,7 @@ import io.github.dej2vu.constant.enums.RuleModel;
 import io.github.dej2vu.domain.raffle.model.RaffleStrategy;
 import io.github.dej2vu.domain.raffle.model.RaffleStrategyPrize;
 import io.github.dej2vu.domain.raffle.model.RaffleStrategyRule;
+import io.github.dej2vu.domain.raffle.model.RuleModels;
 
 import java.util.List;
 import java.util.Map;
@@ -22,10 +23,12 @@ public interface RaffleRepository {
 
     String getPrizeCodeFromPrizeSearchTable(String strategyCode, Integer rateKey);
 
-    String findRuleValueByStrategyCode(String strategyCode, String prizeCode, RuleModel ruleModel);
+    String findRuleValue(String strategyCode, String prizeCode, RuleModel ruleModel);
 
     String findBlacklistRuleValueByStrategyCode(String strategyCode);
 
     String findWeightRuleValueByStrategyCode(String strategyCode);
+
+    RuleModels findRuleModelsByStrategyCodeAndPrizeCode(String strategyCode, String prizeCode);
 
 }

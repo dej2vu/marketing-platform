@@ -20,8 +20,9 @@ import static io.github.dej2vu.constant.enums.RuleModel.WEIGHT;
 
 
 /**
- * @author dej2vu
  * @description 【前置规则】- 根据抽奖权重返回可抽奖范围KEY
+ *
+ * @author dej2vu
  * @create 2024-05-28
  */
 @Component

@@ -2,6 +2,7 @@ package io.github.dej2vu.infrastructure.persistent.raffle.mapper;
 
 import io.github.dej2vu.infrastructure.persistent.raffle.model.RaffleStrategyPrizePO;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -15,5 +16,8 @@ import java.util.List;
 public interface RaffleStrategyPrizeMapper {
 
     List<RaffleStrategyPrizePO> findByStrategyCode(String strategyCode);
+
+    String findRuleModelsByStrategyCodeAndPrizeCode(@Param("strategyCode") String strategyCode,
+                                                    @Param("prizeCode") String prizeCode);
 
 }

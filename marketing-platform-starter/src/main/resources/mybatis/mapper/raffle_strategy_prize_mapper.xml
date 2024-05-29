@@ -24,4 +24,9 @@
         where strategy_code = #{strategyCode}
     </select>
 
+    <select id="findRuleModelsByStrategyCodeAndPrizeCode" resultType="java.lang.String">
+        select rule_models from raffle_strategy_prize
+        where strategy_code = #{strategyCode} and prize_code = #{prizeCode}
+    </select>
+
 </mapper>

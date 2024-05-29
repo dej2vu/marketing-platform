@@ -25,6 +25,8 @@ public class RaffleFactor {
     private String userCode;
     /** 策略编码 */
     private String strategyCode;
+    /** 奖品编码 */
+    private String prizeCode;
 
 
     public void checkArguments(){
