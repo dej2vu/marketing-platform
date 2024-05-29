@@ -18,7 +18,7 @@ public interface RaffleStrategyRuleMapper {
 
     RaffleStrategyRulePO findByStrategyCodeAndRuleModel(@Param("strategyCode") String strategyCode, @Param("ruleModel") String ruleModel);
 
-    String findValueByStrategyCodeAndRuleModel(@Param("strategyCode") String strategyCode,
+    String findValue(@Param("strategyCode") String strategyCode,
                                                @Param("prizeCode") String prizeCode,
                                                @Param("ruleModel") String ruleModel);
 

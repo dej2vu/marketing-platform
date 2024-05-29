@@ -1,10 +1,12 @@
 package io.github.dej2vu.infrastructure.persistent.raffle.repository;
 
+import com.google.common.base.Strings;
 import io.github.dej2vu.constant.Constants;
 import io.github.dej2vu.constant.enums.RuleModel;
 import io.github.dej2vu.domain.raffle.model.RaffleStrategy;
 import io.github.dej2vu.domain.raffle.model.RaffleStrategyPrize;
 import io.github.dej2vu.domain.raffle.model.RaffleStrategyRule;
+import io.github.dej2vu.domain.raffle.model.RuleModels;
 import io.github.dej2vu.domain.raffle.repository.RaffleRepository;
 import io.github.dej2vu.infrastructure.persistent.raffle.convertor.RaffleStrategyPrizeConvertor;
 import io.github.dej2vu.infrastructure.persistent.raffle.mapper.RaffleStrategyMapper;
@@ -20,6 +22,7 @@ import org.springframework.util.CollectionUtils;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 @Repository
 public class RaffleRepositoryImpl implements RaffleRepository {
@@ -52,7 +55,9 @@ public class RaffleRepositoryImpl implements RaffleRepository {
         String cacheKey = Constants.RedisKey.RAFFLE_STRATEGY_PRIZE_LIST_KEY + strategyCode;
         List<RaffleStrategyPrize> cachedStrategyPrizes = redisService.getValue(cacheKey);
 
-        if (!CollectionUtils.isEmpty(cachedStrategyPrizes)) {return cachedStrategyPrizes;}
+        if (!CollectionUtils.isEmpty(cachedStrategyPrizes)) {
+            return cachedStrategyPrizes;
+        }
 
         List<RaffleStrategyPrizePO> rawList = raffleStrategyPrizeMapper.findByStrategyCode(strategyCode);
         List<RaffleStrategyPrize> list = RaffleStrategyPrizeConvertor.convert(rawList);
@@ -95,17 +100,26 @@ public class RaffleRepositoryImpl implements RaffleRepository {
     }
 
     @Override
-    public String findRuleValueByStrategyCode(String strategyCode, String prizeCode, RuleModel ruleModel) {
-        return raffleStrategyRuleMapper.findValueByStrategyCodeAndRuleModel(strategyCode, prizeCode, ruleModel.getCode());
+    public String findRuleValue(String strategyCode, String prizeCode, RuleModel ruleModel) {
+        return raffleStrategyRuleMapper.findValue(strategyCode, prizeCode, ruleModel.getCode());
     }
 
     @Override
     public String findBlacklistRuleValueByStrategyCode(String strategyCode) {
-        return raffleStrategyRuleMapper.findValueByStrategyCodeAndRuleModel(strategyCode, null, RuleModel.BLACKLIST.getCode());
+        return raffleStrategyRuleMapper.findValue(strategyCode, null, RuleModel.BLACKLIST.getCode());
     }
 
     @Override
     public String findWeightRuleValueByStrategyCode(String strategyCode) {
-        return raffleStrategyRuleMapper.findValueByStrategyCodeAndRuleModel(strategyCode, null, RuleModel.WEIGHT.getCode());
+        return raffleStrategyRuleMapper.findValue(strategyCode, null, RuleModel.WEIGHT.getCode());
+    }
+
+    @Override
+    public RuleModels findRuleModelsByStrategyCodeAndPrizeCode(String strategyCode, String prizeCode) {
+        String[] ruleModelValues = Optional.ofNullable(
+                        raffleStrategyPrizeMapper.findRuleModelsByStrategyCodeAndPrizeCode(strategyCode, prizeCode))
+                .map(str -> str.split(Constants.SPLIT))
+                .orElse(new String[0]);
+        return RuleModels.builder().ruleModels(ruleModelValues).build();
     }
 }
